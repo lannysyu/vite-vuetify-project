@@ -6,6 +6,7 @@
     <div>
         <v-toolbar dark>
             <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
+
             <v-img
                 width="50px"
                 src="../assets/logo/logo.png"
