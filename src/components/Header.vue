@@ -1,5 +1,8 @@
 <script setup>
+import { useRoute } from "vue-router";
 
+// 🚀 Data
+const route = useRoute();
 </script>
 
 <template>
@@ -10,12 +13,14 @@
             <v-img
                 width="50px"
                 src="../assets/logo/logo.png"
-                style="display: block;margin-left:15px"
-            ></v-img>
+                class="d-block cursor-pointer ml-4 flex-0-0"
+            >
+                <!-- <router-link :to="{ name: 'Home' }">
 
+                </router-link> -->
+            </v-img>
 
-
-            <v-toolbar-title>LUBUBU </v-toolbar-title>
+            <v-toolbar-title>LUBUBU WEB</v-toolbar-title>
 
             <v-spacer></v-spacer>
 

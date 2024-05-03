@@ -1,6 +1,5 @@
 <template>
-  <!-- <HelloWorld /> -->
-  <Header />
+    <Header />
 </template>
 
 <script setup>
