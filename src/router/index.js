@@ -18,17 +18,16 @@ const router = createRouter({
             name: "Login",
             // component: () => import("@/views/Login.vue")
         },
+        // 首頁
         {
             path: "/",
             name: "Home",
             components: {
                 default: () => import("@/pages/index.vue")
             },
-            meta: {
-                
-            },
+            meta: { },
         },
     ]
 })
 
-export default router
+export default router;
