@@ -1,13 +1,14 @@
+<script setup>
+import Header from "@/layouts/Header.vue"
+</script>
+
 <template>
   <v-app>
-    <v-main>
+    <Header />
+    <v-main class="layout-main">
       <router-view />
     </v-main>
 
     <AppFooter />
   </v-app>
 </template>
-
-<script setup>
-  //
-</script>

@@ -1,6 +1,7 @@
 <template>
-    <!-- <router-view /> -->
-    <div>12345</div>
+    <div>
+        這是cart
+    </div>
 </template>
 
 <script setup>

@@ -16,4 +16,9 @@ export default createVuetify({
   theme: {
     defaultTheme: 'dark',
   },
+  defaults: {
+    VToolbar: {
+      // VBtn: { variant: 'flat' },
+    },
+  },
 })
