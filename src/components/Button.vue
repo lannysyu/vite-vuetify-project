@@ -1,13 +1,15 @@
 <script setup>
 const props = defineProps({
-    title: {
+    btn: {
         type: String
     },
 });
 </script>
 
 <template>
-    <div :class="props.title.class">
-        <h1>{{ props.title.name }}</h1>
+    <div>
+        <v-btn :class="props.btn.class">
+            {{ props.btn.name }}
+        </v-btn>
     </div>
 </template>
