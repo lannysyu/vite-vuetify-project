@@ -7,7 +7,7 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router/auto'
 import { setupLayouts } from 'virtual:generated-layouts'
-import layout from "@/layouts/default.vue";
+// import layout from "@/layouts/default.vue";
 
 
 const router = createRouter({
@@ -19,6 +19,12 @@ const router = createRouter({
             path: "/login",
             name: "Login",
             component: () => import("@/pages/login.vue")
+        },
+        // 建立帳戶
+        {
+            path: "/login",
+            name: "Create",
+            component: () => import("@/pages/createAccount.vue"),
         },
         // 首頁
         {
@@ -48,6 +54,7 @@ const router = createRouter({
             component: () => import("@/pages/shop.vue"),
             meta: { layout: "default" },
         },
+
         // {
         //     path: "/",
         //     name: "",
