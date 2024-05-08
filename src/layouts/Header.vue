@@ -19,10 +19,7 @@ const themeItems = reactive([
 ])
 
 // 🚀 method
-const goToHome = () => {
-    router.push({ path: `/` })
-    console.log(route.path)
-}
+
 </script>
 
 <template>
@@ -31,14 +28,14 @@ const goToHome = () => {
             dark
             class="v-toolbar"
         >
-            <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
+            <router-link to="/">
+                <v-img
+                    width="80px"
+                    src="@/assets/logo/logo.png"
+                    class="d-block cursor-pointer ml-8 flex-0-0"
+                />
 
-            <v-img
-                width="80px"
-                src="../assets/logo/logo.png"
-                class="d-block cursor-pointer ml-8 flex-0-0"
-                @click.stop="goToHome()"
-            />
+            </router-link>
 
             <v-toolbar-title>THE MONSTERS</v-toolbar-title>
 
