@@ -38,6 +38,10 @@ const subtotal = computed(() => {
     return desserts.list.reduce((acc, item) => acc + item.price * item.quantity, 0);
 });
 
+const remove = () => {
+    console.log("123")
+}
+
 </script>
 
 <template>
@@ -76,6 +80,7 @@ const subtotal = computed(() => {
                                     color="grey-darken-3"
                                     class="mr-auto"
                                     size="small"
+                                    @click.stop="remove()"
                                 >REMOVE</v-btn>
                             </div>
                         </div>
@@ -101,10 +106,15 @@ const subtotal = computed(() => {
                 <td class="text-overline font-weight-bold text-right pr-10">NT. {{ subtotal }}</td>
             </tr>
             <tr>
-                <v-btn
-                    color="red"
-                    size="small"
-                >Check Out</v-btn>
+                <td></td>
+                <td></td>
+                <td>
+                    <v-btn
+                        color="red"
+                        size="small"
+                    >Check Out</v-btn>
+                </td>
+
             </tr>
         </tbody>
     </v-table>

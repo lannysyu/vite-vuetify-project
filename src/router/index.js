@@ -22,7 +22,7 @@ const router = createRouter({
         },
         // 建立帳戶
         {
-            path: "/login",
+            path: "/create",
             name: "Create",
             component: () => import("@/pages/createAccount.vue"),
         },
