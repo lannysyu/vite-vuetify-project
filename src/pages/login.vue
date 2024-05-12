@@ -65,7 +65,7 @@ const headerTable = reactive({
             <div class="mt-10">
                 <router-link
                     class="font-weight-light text-overline text-decoration-none text-white"
-                    to="/createAccount"
+                    to="/create"
                 >CREATE ACCOUNT</router-link>
             </div>
             <ContentFooter />

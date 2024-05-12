@@ -103,18 +103,18 @@ const remove = () => {
             <tr>
                 <td></td>
                 <td class="text-overline text-center">Subtotal</td>
-                <td class="text-overline font-weight-bold text-right pr-10">NT. {{ subtotal }}</td>
+                <td class="text-overline font-weight-bold text-right pr-10">
+                    <div>NT. {{ subtotal }}</div>
+                </td>
             </tr>
             <tr>
                 <td></td>
                 <td></td>
-                <td>
-                    <v-btn
-                        color="red"
-                        size="small"
-                    >Check Out</v-btn>
+                <td class="py-5 pr-10">
+                    <v-btn color="red">
+                        Check Out
+                    </v-btn>
                 </td>
-
             </tr>
         </tbody>
     </v-table>
